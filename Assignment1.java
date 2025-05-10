@@ -6,6 +6,14 @@ public class Assignment1 {
         int n = 10;
         System.out.printf("The %d term of the Fibonacci sequence is %d\n", n, fib(n));
     }
+
+    /**
+     * Returns the given nth number of the fibonacci sequence.
+     * Utilizes memoization to reduce recursive depth.
+     *
+     * @param n representing the nth number
+     * @return result given nth of fibonacci
+     */
     public static int fib(int n){
         if (n <= 1){
             return n;
